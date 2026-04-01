@@ -5,7 +5,7 @@ import About from './pages/About';
 
 function App() {
   return (
-   <>
+    <>
       <NavBar />
       <main>
         <Routes>
@@ -13,8 +13,8 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
-   </>
-  )
+    </>
+  );
 }
 
 export default App
