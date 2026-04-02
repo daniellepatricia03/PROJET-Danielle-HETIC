@@ -1,24 +1,16 @@
-import { NavLink } from "react-router";
+import { NavLink } from 'react-router-dom'
+import styles from './Navbar.module.css'
 
-function NavBar() {
-    return (
-        <nav>
-            <h1>HETIC</h1>
-             <div>
-                <NavLink
-                    to="/home"
-                >
-                    Home
-                </NavLink>
-                <br/>
-                <NavLink
-                    to="/about"
-                >
-                    About
-                </NavLink>
-             </div>
-        </nav>
-    );
+function Navbar() {
+  return (
+    <nav className={styles.navbar}>
+      <span className={styles.logo}>🍽️ RecetteApp</span>
+      <ul className={styles.links}>
+        <li><NavLink to="/" end className={({ isActive }) => isActive ? styles.active : ''}>Accueil</NavLink></li>
+        <li><NavLink to="/recettes" className={({ isActive }) => isActive ? styles.active : ''}>Recettes</NavLink></li>
+      </ul>
+    </nav>
+  )
 }
 
-export default NavBar;
+export default Navbar

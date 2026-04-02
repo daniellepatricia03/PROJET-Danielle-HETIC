@@ -1,0 +1,81 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.retour {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #e67e22;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.retour:hover {
+  text-decoration: underline;
+}
+
+.titre {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.badge {
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.sectionTitre {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #e67e22;
+}
+
+.ingredients {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.ingredients li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.ingredients li::before {
+  content: "✓ ";
+  color: #e67e22;
+  font-weight: 700;
+}
+
+.instructions {
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

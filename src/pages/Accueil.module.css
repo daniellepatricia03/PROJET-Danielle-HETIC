@@ -1,0 +1,76 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 48px;
+}
+
+.titre {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.accent {
+  color: #e67e22;
+}
+
+.sousTitre {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e67e22;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #cf6d17;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.feature {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  width: 220px;
+}
+
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.featureTitre {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.featureTexte {
+  font-size: 0.9rem;
+  color: #888;
+}
