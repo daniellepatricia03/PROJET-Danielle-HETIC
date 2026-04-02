@@ -57,3 +57,32 @@
 .btnVoirPlus:hover {
   background-color: #cf6d17;
 }
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.filtre {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #444;
+}
+
+.filtre:hover {
+  border-color: #e67e22;
+  color: #e67e22;
+}
+
+.filtreActif {
+  background-color: #e67e22;
+  border-color: #e67e22;
+  color: white;
+}

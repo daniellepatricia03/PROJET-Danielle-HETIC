@@ -1,17 +1,28 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import recettes from '../data'
+import RecetteCard from '../components/RecetteCard'
 import styles from './Accueil.module.css'
 
 function Accueil() {
+  const [recettesAleatoires, setRecettesAleatoires] = useState([])
+
+  useEffect(() => {
+    const melangees = [...recettes].sort(() => Math.random() - 0.5)
+    setRecettesAleatoires(melangees.slice(0, 3))
+  }, [])
+
   return (
     <main className={styles.container}>
       <div className={styles.hero}>
         <h1 className={styles.titre}>
-  Bienvenue sur <span className={styles.accent}>DanyCook</span> 🍳</h1>
+          Bienvenue sur <span className={styles.accent}>DanyCook</span> 🍳
+        </h1>
         <p className={styles.sousTitre}>
           Découvrez des recettes délicieuses et faciles à réaliser
         </p>
         <Link to="/recettes" className={styles.btn}>
-          Voir les recettes →
+          Voir toutes les recettes →
         </Link>
       </div>
 
@@ -30,6 +41,15 @@ function Accueil() {
           <div className={styles.featureIcon}>⭐</div>
           <h3 className={styles.featureTitre}>Niveau indiqué</h3>
           <p className={styles.featureTexte}>Des recettes pour tous les niveaux de cuisine</p>
+        </div>
+      </div>
+
+      <div className={styles.suggestion}>
+        <h2 className={styles.suggestionTitre}>✨ Recettes du moment</h2>
+        <div className={styles.suggestionGrille}>
+          {recettesAleatoires.map(recette => (
+            <RecetteCard key={recette.id} recette={recette} />
+          ))}
         </div>
       </div>
     </main>
