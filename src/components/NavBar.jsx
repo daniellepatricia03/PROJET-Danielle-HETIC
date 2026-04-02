@@ -4,7 +4,7 @@ import styles from './Navbar.module.css'
 function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <span className={styles.logo}>🍽️ RecetteApp</span>
+     <span className={styles.logo}>🍳 DanyCook</span>
       <ul className={styles.links}>
         <li><NavLink to="/" end className={({ isActive }) => isActive ? styles.active : ''}>Accueil</NavLink></li>
         <li><NavLink to="/recettes" className={({ isActive }) => isActive ? styles.active : ''}>Recettes</NavLink></li>

@@ -6,8 +6,7 @@ function Accueil() {
     <main className={styles.container}>
       <div className={styles.hero}>
         <h1 className={styles.titre}>
-          Bienvenue sur <span className={styles.accent}>RecetteApp</span> 🍽️
-        </h1>
+  Bienvenue sur <span className={styles.accent}>DanyCook</span> 🍳</h1>
         <p className={styles.sousTitre}>
           Découvrez des recettes délicieuses et faciles à réaliser
         </p>
