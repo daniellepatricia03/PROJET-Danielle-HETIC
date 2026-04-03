@@ -5,11 +5,10 @@
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   font-size: 1rem;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   outline: none;
   transition: border-color 0.2s;
 }
-
 .search:focus {
   border-color: #e67e22;
 }

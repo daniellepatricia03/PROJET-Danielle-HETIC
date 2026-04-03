@@ -1,0 +1,21 @@
+.btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s, transform 0.2s;
+  z-index: 999;
+}
+
+.btn:hover {
+  background-color: #cf6d17;
+  transform: translateY(-3px);
+}

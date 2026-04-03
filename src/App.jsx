@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import Accueil from './pages/Accueil'
 import Recettes from './pages/Recettes'
 import Detail from './pages/Detail'
@@ -19,6 +21,8 @@ function App() {
         <Route path="/favoris" element={<Favoris />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
+      <ScrollToTop />
     </>
   )
 }
