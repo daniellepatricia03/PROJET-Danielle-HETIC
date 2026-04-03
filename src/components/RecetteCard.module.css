@@ -5,6 +5,7 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
+  position: relative;
 }
 
 .card:hover {
@@ -49,4 +50,30 @@
 
 .btn:hover {
   background-color: #cf6d17;
+}
+
+.favori {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.favori:hover {
+  transform: scale(1.1);
+}
+
+.favoriActif {
+  background: #fff0e8;
 }
